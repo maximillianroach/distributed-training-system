@@ -32,7 +32,7 @@ def benchmark(
         batch_size: int = 32,
         # benchmarking params
         bench_type: str = "fbo", # f for forward-only, fb for forward-backward, fbo for foward-backward with optimizer
-        warmup_steps: int=1, 
+        warmup_steps: int=5, 
         num_steps: int=10,
 ):
     benchmark_times = []
