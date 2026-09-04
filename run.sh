@@ -12,4 +12,4 @@ conda activate rl-lab
 
 pip install -r requirements.txt
 
-python -m benchmark
+python -m cs336_systems.benchmark

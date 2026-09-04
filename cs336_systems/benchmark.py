@@ -126,6 +126,9 @@ def benchmark(
 
     return (statistics.mean(benchmark_times), statistics.stdev(benchmark_times))
 
+def pytorch_benchmark():
+    pass
+
 def main():
     mean, std = benchmark()
     print(f"mean: {mean}")
