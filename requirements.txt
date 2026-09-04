@@ -3,3 +3,4 @@ einx
 einops
 numpy
 statistics
+jaxtyping
