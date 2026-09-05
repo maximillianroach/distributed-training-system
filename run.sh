@@ -13,4 +13,4 @@ conda activate rl-lab
 
 pip install -r requirements.txt
 
-uv run nsys profile --trace=cuda,cudnn,cublas,osrt,nvtx --cudabacktrace=all --gpu-metrics-devices=0 -- python -m cs336_systems.benchmark
+uv run nsys profile --trace=cuda,cudnn,cublas,osrt,nvtx --cudabacktrace=all -- python -m cs336_systems.benchmark
