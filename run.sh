@@ -13,4 +13,4 @@ conda activate rl-lab
 
 pip install -r requirements.txt
 
-uv run nsys profile -- python benchmark.py
+uv run nsys profile -- python -m cs336_systems.benchmark
