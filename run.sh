@@ -9,10 +9,8 @@
 
 module load miniconda
 module load CUDA/12.8
-module avail nsight
-module avail nsys
 conda activate rl-lab
 
 pip install -r requirements.txt
 
-uv run nsys profile --trace=cuda,cudnn,cublas,osrt,nvtx --pytorch=functions-trace,autograd-shapes-nvtx --cudabacktrace=all --python-backtrace=cuda --gpu-metrics-devices=0 -- python -m cs336_systems.benchmark
+uv run nsys profile --trace=cuda,cudnn,cublas,osrt,nvtx --cudabacktrace=all --gpu-metrics-devices=0 -- python -m cs336_systems.benchmark
