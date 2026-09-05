@@ -9,6 +9,8 @@
 
 module load miniconda
 module load CUDA/12.8
+module avail nsight
+module avail nsys
 conda activate rl-lab
 
 pip install -r requirements.txt
