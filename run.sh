@@ -8,8 +8,9 @@
 #SBATCH --error=logs/systems_%j.err
 
 module load miniconda
+module load CUDA/12.8
 conda activate rl-lab
 
 pip install -r requirements.txt
 
-python -m cs336_systems.benchmark
+uv run nsys -- python benchmark.py
