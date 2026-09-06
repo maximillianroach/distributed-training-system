@@ -75,22 +75,17 @@ class FlashAttentionPytorch(torch.autograd.Function):
         ctx.is_causal = is_causal
 
         return O
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    @staticmethod
     def backward(ctx):
         raise NotImplementedError
+
+class FlashAttentionTriton(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, Q, K, V, is_causal=False):
+        pass
+
+    @staticmethod
+    def backward(ctx):
+        raise NotImplementedError
+
